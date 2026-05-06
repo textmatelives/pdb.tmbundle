@@ -5,8 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env python
-
+	<string>#!/usr/bin/env python3
 # Get the location of the carret. Search back in the document for the first
 # occurance of an ATOM line and print it at the carret location.
 # If no ATOM line was found, print a default line
@@ -23,7 +22,7 @@ found = False
 while currLineNumber != 0:
 	if len(lines[currLineNumber-1].strip()):
 		if atom.match(lines[currLineNumber-1]):
-			print(lines[currLineNumber-1].strip())
+			print((lines[currLineNumber-1].strip()))
 			found = True
 			break
 		else:	
