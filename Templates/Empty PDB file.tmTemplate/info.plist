@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -wKU
+	<string>#!/usr/bin/env ruby -wEutf-8
 
 f = open(ENV["TM_NEW_FILE"], 'w')
 template = open("structure.pdb").read
